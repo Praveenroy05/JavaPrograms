@@ -14,7 +14,6 @@ public class StringManipulation {
         for( int I =0; I< x.length-1; I++) {
             for (int j = I + 1; j < x.length; j++) {
                 if (x[I].charAt(0) > (x[j].charAt(0))) {
-
                     String temp = x[I];
                     x[I] = x[j];
                     x[j] = temp;

@@ -21,8 +21,8 @@ public class ExtractDigits {
         }
 
         // Print the result
-        System.out.println("Digits extracted: " + result.toString());
-        System.out.println("Digits extracted1: " + result1.toString());
+        System.out.println("Digit extracted: " + result.toString());
+        System.out.println("Digits extracted1: " + result1);
 
 
         extractDigit();
@@ -43,15 +43,14 @@ public class ExtractDigits {
         }
 
         // Print the result
-        System.out.println("Digits extracted: " + result.toString());
+        System.out.println("Digits extracted: " + result);
     }
 
     public static void digitCount(String str){
-        String digit="";
+        StringBuilder digit= new StringBuilder();
         for(char c: str.toCharArray()){
-        //    char ch = str.charAt(i);
             if(Character.isDigit(c)){
-                digit+=c;
+                digit.append(c);
             }
         }
         System.out.println(digit);
