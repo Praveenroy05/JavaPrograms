@@ -14,6 +14,7 @@ public class Sort0And1InAnArray {
                 count++;
         }
 
+
         // loop fills the arr with 0 until count
         for (int i = 0; i < count; i++)
             arr[i] = 0;
